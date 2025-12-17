@@ -1,3 +1,4 @@
+#define and remove functions
 def add_task(tasks, task):
 	tasks.append(task)
 def remove_task(tasks,task):
@@ -6,7 +7,10 @@ def remove_task(tasks,task):
     else: 
       print('Task not in list')
 
+#list
 tasks = []
+
+#loop for entering or removing tasks 
 while True: 
     action = input('Enter A to add or R to remove(q to quit): ')
     if action.lower() == q
