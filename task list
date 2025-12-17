@@ -1,0 +1,29 @@
+def add_task(tasks, task):
+	tasks.append(task)
+def remove_task(tasks,task):
+    if task in tasks:
+      tasks.remove(task)    
+    else: 
+      print('Task not in list')
+
+tasks = []
+while True: 
+    action = input('Enter A to add or R to remove(q to quit): ')
+    if action.lower() == q
+        break
+    if action == 'A':
+        user_input = input('Enter task to add or q to cancel: ')
+        if user_input.lower() == q:
+            continue
+        add_task(tasks, user_input)
+    elif action == 'R': 
+        user_input = input('Enter task to remove or q to cancel: ')   
+        if user_input.lower() == q:
+            continue
+        remove_task(tasks, user_input)  
+    else:
+        print('Invalid operation')    
+    print('Current tasks:', tasks)   
+
+print('Goodbye!')    
+      
