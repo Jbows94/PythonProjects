@@ -1,4 +1,4 @@
-#define and remove functions
+#define add and remove functions
 def add_task(tasks, task):
 	tasks.append(task)
 def remove_task(tasks,task):
