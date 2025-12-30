@@ -8,7 +8,7 @@ inc = int(input('Enter your monthly income: '))
 bills = []
 try: 
     while True:
-        user_input = input('Enter bills or q to cancel: ')
+        user_input = input('Enter bill amounts or q to cancel: ')
         if user_input.lower() == 'q':
             break 
         bill = int(user_input)    
