@@ -24,7 +24,10 @@ print('Your total bills are $' + str(total_bills))
 budget = functions.diff(inc, total_bills)
 print('Your budget is $' + str(budget))
 #user enters total of extra spending 
-spending = int(input('Enter how much extra you have spent this month: '))
+try:
+    spending = int(input('Enter how much extra you have spent this month: '))
+except ValueError: 
+    print('Error. Enter total extra spending amount.')
 #find total expenses for month
 exp_total = (functions.diff(budget, spending))
 #informs if over budget or on track
