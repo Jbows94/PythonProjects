@@ -31,3 +31,18 @@ def remove_inventory(inventory, item):
         inventory.remove(item)
     else:    
        print('Item not found')     
+
+#function for expense calc
+def get_expns(budget_dict, category_name):
+    for category, amount in budget_dict['expenses']:
+        if category == category_name: 
+            return amount
+    return None      
+def add_expns(budget_dict, category_name, amount):
+    budget_dict['expense'].append((category_name, amount))
+def update_expens(budget_dict, category_name, new_amount):
+    for i, (category, amount) in enumerate(budget_dict['expenses']):
+            if category == category_name: 
+                budget_dict['expenses'][i] = (category, new_amount)
+                return
+    add_expns(budget_dict, category_name, new_amount)  
